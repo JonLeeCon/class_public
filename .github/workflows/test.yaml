@@ -12,5 +12,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: make
+    - name: Build
       run: make -j class
+    - name: Run a test default ini
+      run: ./class explanatory.ini
